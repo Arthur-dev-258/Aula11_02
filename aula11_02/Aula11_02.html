@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula11-02 </title>
+    <meta name="veiwport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" />
+    <script lenguege="javascript" type="text/javascript">
+        function validarcadastro() {
+            var nome_cadastro = formcadstro.nome_cad.value;
+            var email_cadastro = formcadstro.email_cad.value;
+            var senha_cadastro = formcadstro.senha_cad.value;
+            if (nome_cadastro == "") {
+                alert('preencha o campocom seu nome !');
+                formcadstro.nome_cad.focus();
+                return false;
+            }
+        }
+        if (nome_cadastro == "") {
+            alert('preencha o campocom seu senha !');
+            formcadstro.senha_cad.focus();
+            return false;
+        }
+
+        if (nome_cadastro == "") {
+            alert('preencha o campocom seu email !');
+            formcadstro.email_cad.focus();
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div calss="container">
+        <a calss="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        <div class="content">
+
+            <!-- formulario de login -->
+            <div id="login">
+                <form method="post" action="">
+                    <h1> Login </h1>
+                    <p>
+                        <label for="nome_login"> Seu e-mail </label>
+                        <input id="nome_login" name="nome_login" required="required" type="text"
+                            placeholder="digite seu e-mail" />
+                    </p>
+                    <p>
+                    <p>
+                        <label for="nome_login"> Sua senha </label>
+                        <input id="nome_login" name="nome_login" required="required" type="password"
+                            placeholder="digite sua senha" />
+                    </p>
+                    <p>
+                        <input type="checkbox" name="materlogato" id="materlogato" value="" />
+                        <label for="manterlogado"> manter-me logado ? </label>
+                    <p>
+                        <input type="submit" value="logar" />
+                    </p>
+                    <p calss="link">
+                        Ainda nao tem conta rapaz ?
+                        <a href="#paracadastro"> cadastre-se ai meu chapa </a>
+            </div>
+
+            <!--formulario de cadastro-->
+            <div id="cadastro">
+                <form method="post" action="">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome_cad"> Fala teu nome ai </label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+
+                    <p>
+                        <label for="nome_cad"> Bota teu email ai man </label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text"
+                            placeholder="digite seu email" />
+                    </p>
+
+                    <p>
+                        <label for="senha_cad"> Cria uma senha ai mancho </label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password"
+                            placeholder="so numero " />
+
+                    </p>
+                    <p>
+                        <input type="submit" value="cadastrar" />
+                    </p>
+                    <p class="link">
+                        tu ja tem conta ?
+                        <a href="#paralogin"> vai pro login doido </a>
+                    </p>
+                    </p>
+                    </p>
+            </div>
+</body>
+
+</html>
+</form>
